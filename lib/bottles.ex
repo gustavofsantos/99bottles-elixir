@@ -5,7 +5,7 @@ defmodule Bottles do
 
   def verse(number) when number == 0 do
     """
-    No more bottles of beer on the wall, no more bottles of beer.
+    #{String.capitalize(quantity(number))} bottles of beer on the wall, no more bottles of beer.
     Go to the store and buy some more, 99 bottles of beer on the wall.
     """
   end
@@ -48,7 +48,7 @@ defmodule Bottles do
   defp quantity(number) do
     case number do
       0 -> "no more"
-      _ -> number
+      _ -> to_string(number)
     end
   end
 end
