@@ -17,10 +17,10 @@ defmodule Bottles do
     """
   end
 
-  def verse(2) do
+  def verse(number) do
     """
-    2 bottles of beer on the wall, 2 bottles of beer.
-    Take one down and pass it around, 1 #{container(1)} of beer on the wall.
+    #{number} bottles of beer on the wall, #{number} bottles of beer.
+    Take one down and pass it around, #{number - 1} #{container(number - 1)} of beer on the wall.
     """
   end
 
@@ -28,7 +28,7 @@ defmodule Bottles do
   def verse(number) do
     """
     #{number} bottles of beer on the wall, #{number} bottles of beer.
-    Take one down and pass it around, #{number - 1} #{container(number)} of beer on the wall.
+    Take one down and pass it around, #{number - 1} #{container(number - 1)} of beer on the wall.
     """
   end
 
