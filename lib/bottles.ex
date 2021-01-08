@@ -21,7 +21,7 @@ defmodule Bottles do
   def verse(number) do
     """
     #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
-    Take one down and pass it around, #{number - 1} #{container(number - 1)} of beer on the wall.
+    Take #{pronoum()} down and pass it around, #{number - 1} #{container(number - 1)} of beer on the wall.
     """
   end
 
