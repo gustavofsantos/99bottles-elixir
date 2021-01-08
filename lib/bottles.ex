@@ -17,13 +17,6 @@ defmodule Bottles do
     """
   end
 
-  def verse(number) do
-    """
-    #{number} bottles of beer on the wall, #{number} bottles of beer.
-    Take one down and pass it around, #{number - 1} #{container(number - 1)} of beer on the wall.
-    """
-  end
-
   @spec verse(integer()) :: String.t()
   def verse(number) do
     """
