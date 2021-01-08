@@ -12,7 +12,7 @@ defmodule Bottles do
 
   def verse(1) do
     """
-    1 bottle of beer on the wall, 1 bottle of beer.
+    1 #{container(1)} of beer on the wall, 1 #{container(1)} of beer.
     Take it down and pass it around, no more bottles of beer on the wall.
     """
   end
