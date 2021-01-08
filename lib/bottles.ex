@@ -13,7 +13,7 @@ defmodule Bottles do
   def verse(number) when number == 1 do
     """
     #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
-    Take it down and pass it around, no more bottles of beer on the wall.
+    Take #{pronoum(number)} down and pass it around, no more bottles of beer on the wall.
     """
   end
 
