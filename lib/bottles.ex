@@ -42,4 +42,7 @@ defmodule Bottles do
     Enum.map(n..m, &verse/1)
     |> Enum.join("\n")
   end
+
+  defp container(_) do
+  end
 end
