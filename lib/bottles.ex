@@ -13,7 +13,7 @@ defmodule Bottles do
   @spec verse(integer()) :: String.t()
   def verse(number) do
     """
-    #{String.capitalize(quantity(number))} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
+    #{String.capitalize(quantity(number))} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
     Take #{pronoum(number)} down and pass it around, #{quantity(number - 1)} #{container(number - 1)} of beer on the wall.
     """
   end
