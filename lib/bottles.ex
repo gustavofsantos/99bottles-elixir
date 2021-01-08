@@ -20,7 +20,7 @@ defmodule Bottles do
   def verse(2) do
     """
     2 bottles of beer on the wall, 2 bottles of beer.
-    Take one down and pass it around, 1 bottle of beer on the wall.
+    Take one down and pass it around, 1 #{container(1)} of beer on the wall.
     """
   end
 
