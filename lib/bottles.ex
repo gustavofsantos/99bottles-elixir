@@ -49,4 +49,8 @@ defmodule Bottles do
       _ -> "one"
     end
   end
+
+  defp quantity do
+
+  end
 end
