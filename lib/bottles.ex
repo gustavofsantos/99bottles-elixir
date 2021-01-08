@@ -45,6 +45,7 @@ defmodule Bottles do
     end
   end
 
+  @spec quantity(integer()) :: String.t()
   defp quantity(number) do
     case number do
       0 -> "no more"
@@ -52,6 +53,7 @@ defmodule Bottles do
     end
   end
 
+  @spec action(integer()) :: String.t()
   defp action(number) do
     case number do
       0 -> "Go to the store and buy some more"
