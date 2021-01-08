@@ -3,7 +3,7 @@ defmodule Bottles do
   Documentation for `Bottles`.
   """
 
-  def verse(0) do
+  def verse(number) when number == 0 do
     """
     No more bottles of beer on the wall, no more bottles of beer.
     Go to the store and buy some more, 99 bottles of beer on the wall.
