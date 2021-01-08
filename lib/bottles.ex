@@ -10,9 +10,9 @@ defmodule Bottles do
     """
   end
 
-  def verse(1) do
+  def verse(number) when number == 1 do
     """
-    1 #{container(1)} of beer on the wall, 1 #{container(1)} of beer.
+    #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
     Take it down and pass it around, no more bottles of beer on the wall.
     """
   end
