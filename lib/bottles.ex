@@ -5,7 +5,7 @@ defmodule Bottles do
 
   def verse(number) when number == 0 do
     """
-    #{String.capitalize(quantity(number))} #{container(number)} of beer on the wall, no more bottles of beer.
+    #{String.capitalize(quantity(number))} #{container(number)} of beer on the wall, #{quantity(number)} bottles of beer.
     Go to the store and buy some more, 99 bottles of beer on the wall.
     """
   end
