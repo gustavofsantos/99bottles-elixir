@@ -51,4 +51,11 @@ defmodule Bottles do
       _ -> to_string(number)
     end
   end
+
+  defp action(number) do
+    case number do
+      0 -> "Go to the store and buy some more"
+      _ -> "Take #{pronoum(number)} down and pass it around"
+    end
+  end
 end
