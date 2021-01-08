@@ -53,6 +53,6 @@ defmodule Bottles do
   end
 
   defp quantity do
-
+    "no more"
   end
 end
