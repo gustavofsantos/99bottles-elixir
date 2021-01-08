@@ -42,4 +42,8 @@ defmodule Bottles do
       _ -> "bottles"
     end
   end
+
+  defp pronoum do
+    "one"
+  end
 end
