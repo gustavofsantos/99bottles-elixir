@@ -44,5 +44,6 @@ defmodule Bottles do
   end
 
   defp container(_) do
+    "bottles"
   end
 end
