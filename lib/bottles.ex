@@ -10,13 +10,6 @@ defmodule Bottles do
     """
   end
 
-  def verse(number) when number == 1 do
-    """
-    #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
-    Take #{pronoum(number)} down and pass it around, #{quantity(number - 1)} #{container(number - 1)} of beer on the wall.
-    """
-  end
-
   @spec verse(integer()) :: String.t()
   def verse(number) do
     """
