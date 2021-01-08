@@ -36,6 +36,7 @@ defmodule Bottles do
     |> Enum.join("\n")
   end
 
+  @spec container(integer()) :: String.t()
   defp container(number) do
     case number do
       1 -> "bottle"
@@ -43,6 +44,7 @@ defmodule Bottles do
     end
   end
 
+  @spec pronoum(integer()) :: String.t()
   defp pronoum(number) do
     case number do
       1 -> "it"
