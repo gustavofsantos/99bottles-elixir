@@ -21,7 +21,7 @@ defmodule Bottles do
   def verse(number) do
     """
     #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
-    Take #{pronoum()} down and pass it around, #{number - 1} #{container(number - 1)} of beer on the wall.
+    Take #{pronoum(number)} down and pass it around, #{number - 1} #{container(number - 1)} of beer on the wall.
     """
   end
 
@@ -43,7 +43,10 @@ defmodule Bottles do
     end
   end
 
-  defp pronoum do
-    "one"
+  defp pronoum(number) do
+    case number do
+      1 -> "it"
+      _ -> "one"
+    end
   end
 end
