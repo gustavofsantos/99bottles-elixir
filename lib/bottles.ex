@@ -13,7 +13,7 @@ defmodule Bottles do
   def verse(number) when number == 1 do
     """
     #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
-    Take #{pronoum(number)} down and pass it around, #{quantity(number)} #{container(number - 1)} of beer on the wall.
+    Take #{pronoum(number)} down and pass it around, #{quantity(number - 1)} #{container(number - 1)} of beer on the wall.
     """
   end
 
@@ -52,7 +52,10 @@ defmodule Bottles do
     end
   end
 
-  defp quantity(_number) do
-    "no more"
+  defp quantity(number) do
+    case number do
+      0 -> "no more"
+      _ -> number
+    end
   end
 end
