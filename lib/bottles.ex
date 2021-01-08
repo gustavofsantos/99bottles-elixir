@@ -28,7 +28,7 @@ defmodule Bottles do
   def verse(number) do
     """
     #{number} bottles of beer on the wall, #{number} bottles of beer.
-    Take one down and pass it around, #{number - 1} #{container()} of beer on the wall.
+    Take one down and pass it around, #{number - 1} #{container(number)} of beer on the wall.
     """
   end
 
@@ -43,7 +43,7 @@ defmodule Bottles do
     |> Enum.join("\n")
   end
 
-  defp container do
+  defp container(_number) do
     "bottles"
   end
 end
