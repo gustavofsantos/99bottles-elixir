@@ -6,7 +6,7 @@ defmodule Bottles do
   def verse(number) when number == 0 do
     """
     #{String.capitalize(quantity(number))} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
-    Go to the store and buy some more, 99 bottles of beer on the wall.
+    #{action(number)}, 99 bottles of beer on the wall.
     """
   end
 
@@ -14,7 +14,7 @@ defmodule Bottles do
   def verse(number) do
     """
     #{String.capitalize(quantity(number))} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
-    Take #{pronoum(number)} down and pass it around, #{quantity(number - 1)} #{container(number - 1)} of beer on the wall.
+    #{action(number)}, #{quantity(number - 1)} #{container(number - 1)} of beer on the wall.
     """
   end
 
