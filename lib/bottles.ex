@@ -43,7 +43,10 @@ defmodule Bottles do
     |> Enum.join("\n")
   end
 
-  defp container(_number) do
-    "bottles"
+  defp container(number) do
+    case number do
+      1 -> "bottle"
+      _ -> "bottles"
+    end
   end
 end
