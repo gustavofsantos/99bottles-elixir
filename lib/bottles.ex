@@ -61,7 +61,7 @@ defmodule Bottles do
     end
   end
 
-  defp successor do
-
+  defp successor(number) do
+    number - 1
   end
 end
