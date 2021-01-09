@@ -46,13 +46,8 @@ defmodule Bottles do
     end
   end
 
-  @spec action(integer()) :: String.t()
-  defp action(number) do
-    case number do
-      0 -> "Go to the store and buy some more"
-      _ -> "Take #{pronoum(number)} down and pass it around"
-    end
-  end
+  defp action(0), do: "Go to the store and buy some more"
+  defp action(number), do: "Take #{pronoum(number)} down and pass it around"
 
   defp successor(0), do: 99
   defp successor(number), do: number - 1
