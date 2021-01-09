@@ -1,6 +1,6 @@
 # 99Bottles
 
-Elixir implementation of default 99 Bottles of OOP exercise. 
+Elixir implementation of default [99 Bottles of OOP](https://sandimetz.com/99bottles-sample-ruby) exercise.
 
 ## What you need to run this
 
