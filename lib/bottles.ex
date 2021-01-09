@@ -60,4 +60,8 @@ defmodule Bottles do
       _ -> "Take #{pronoum(number)} down and pass it around"
     end
   end
+
+  defp successor do
+
+  end
 end
