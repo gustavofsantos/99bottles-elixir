@@ -38,13 +38,8 @@ defmodule Bottles do
     end
   end
 
-  @spec quantity(integer()) :: String.t()
-  defp quantity(number) do
-    case number do
-      0 -> "no more"
-      _ -> to_string(number)
-    end
-  end
+  defp quantity(0), do: "no more"
+  defp quantity(number), do: to_string(number)
 
   defp action(0), do: "Go to the store and buy some more"
   defp action(number), do: "Take #{pronoum(number)} down and pass it around"
