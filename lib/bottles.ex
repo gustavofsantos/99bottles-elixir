@@ -54,10 +54,6 @@ defmodule Bottles do
     end
   end
 
-  defp successor(number) do
-    case number do
-      0 -> 99
-      _ -> number - 1
-    end
-  end
+  defp successor(0), do: 99
+  defp successor(number), do: number - 1
 end
