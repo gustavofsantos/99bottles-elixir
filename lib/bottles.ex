@@ -3,13 +3,6 @@ defmodule Bottles do
   Documentation for `Bottles`.
   """
 
-  def verse(number) when number == 0 do
-    """
-    #{String.capitalize(quantity(number))} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.
-    #{action(number)}, #{quantity(successor(number))} #{container(number - 1)} of beer on the wall.
-    """
-  end
-
   @spec verse(integer()) :: String.t()
   def verse(number) do
     """
