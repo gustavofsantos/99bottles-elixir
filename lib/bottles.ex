@@ -30,13 +30,8 @@ defmodule Bottles do
     end
   end
 
-  @spec pronoum(integer()) :: String.t()
-  defp pronoum(number) do
-    case number do
-      1 -> "it"
-      _ -> "one"
-    end
-  end
+  defp pronoum(1), do: "it"
+  defp pronoum(_), do: "one"
 
   defp quantity(0), do: "no more"
   defp quantity(number), do: to_string(number)
